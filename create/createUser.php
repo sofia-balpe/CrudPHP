@@ -10,7 +10,7 @@ unset($_SESSION['feedback']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cliente</title>
+    <title>Cadastrar Usuário</title>
 </head>
 <body>
     
@@ -22,14 +22,14 @@ if ($feedback!=false) {
    }
 } 
 ?>
-    <form action="validateCreateCliente.php" method="post">
+    <form action="validateCreateUser.php" method="post">
 
-    <input type="text" placeholder="Nome de cliente" name="name" required><br>
-    <input type="text" placeholder="CPF de cliente" name="cpf" required> <br>
-    <input type="text" placeholder="Endereço de cliente" name="endereco"required> <br>
+    <input type="text" placeholder="Nome de usuário" name="name" required><br>
+    <input type="text" placeholder="CPF de usuário" name="cpf" required> <br>
+    <input type="email" placeholder="Email de usuário" name="email" required> <br>
     <input type="date" placeholder="Data de nascimento" name="data"><br>
     <input type="submit" value="Enviar dados"> <br>
     </form>
-<a href="../listar/listarCliente.php">listar Clientes</a>
+<a href="../listar/listarUsers.php">listar Usuários</a>
 </body>
 </html>

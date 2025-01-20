@@ -1,15 +1,20 @@
 <?php 
 session_start();
-include("../database.php");
-use App\banco;
 
+include("../database.php");
+
+use App\banco;
 $banco = new banco();
+
+// var_dump($indexEditar);
+// exit();
 
 $name = $_POST["name"];
 $cpf = $_POST["cpf"];
 $endereco = $_POST["endereco"];
 $data = $_POST["data"];
 
+$indexEditar = $_POST['editar'];
 $erros = [];
 
 //validações do nome:
@@ -30,10 +35,13 @@ if (!preg_match('/^[A-Za-z0-9\s,.-]+$/', $endereco)) {
 //Validar os erros:
 if ($erros != null) {
     $_SESSION['feedback'] = $erros;
-    header("location: createCliente.php");
+    header('Location: editarCliente.php');
     exit();
 }
 
-$banco->cadastrarClientes($name, $cpf, $endereco, $data);
-header('location: createCliente.php');
+$banco->editarClientes($name, $cpf, $endereco, $data, $indexEditar);
+header('Location: ../listar/listarCliente.php');
+
+
+
 ?>

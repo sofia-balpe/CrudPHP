@@ -1,15 +1,20 @@
 <?php 
 session_start();
-include("../database.php");
-use App\banco;
 
+include("../database.php");
+
+use App\banco;
 $banco = new banco();
+
+// var_dump($indexEditar);
+// exit();
 
 $name = $_POST["name"];
 $cpf = $_POST["cpf"];
-$endereco = $_POST["endereco"];
+$email = $_POST["email"];
 $data = $_POST["data"];
 
+$indexEditar = $_POST['editarUser'];
 $erros = [];
 
 //validações do nome:
@@ -22,18 +27,17 @@ if (!preg_match('/^\d{3}\.\d{3}\.\d{3}-\d{2}$|^\d{11}$/', $cpf)) {
     $erros[] = "CPF inválido";
 }
 
-//Validar endereço:
-if (!preg_match('/^[A-Za-z0-9\s,.-]+$/', $endereco)) {
-    $erros[] = "Endereço inválido, não são permitidos caracteres especiais";
-}
 
 //Validar os erros:
 if ($erros != null) {
     $_SESSION['feedback'] = $erros;
-    header("location: createCliente.php");
+    header('Location: editarUser.php');
     exit();
 }
 
-$banco->cadastrarClientes($name, $cpf, $endereco, $data);
-header('location: createCliente.php');
+$banco->editarUsers($name, $cpf, $email, $data, $indexEditar);
+header('Location: ../listar/listarUsers.php');
+
+
+
 ?>

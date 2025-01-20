@@ -7,7 +7,7 @@ $banco = new banco();
 
 $name = $_POST["name"];
 $cpf = $_POST["cpf"];
-$endereco = $_POST["endereco"];
+$email = $_POST["email"];
 $data = $_POST["data"];
 
 $erros = [];
@@ -22,10 +22,6 @@ if (!preg_match('/^\d{3}\.\d{3}\.\d{3}-\d{2}$|^\d{11}$/', $cpf)) {
     $erros[] = "CPF inválido";
 }
 
-//Validar endereço:
-if (!preg_match('/^[A-Za-z0-9\s,.-]+$/', $endereco)) {
-    $erros[] = "Endereço inválido, não são permitidos caracteres especiais";
-}
 
 //Validar os erros:
 if ($erros != null) {
@@ -34,6 +30,6 @@ if ($erros != null) {
     exit();
 }
 
-$banco->cadastrarClientes($name, $cpf, $endereco, $data);
-header('location: createCliente.php');
+$banco->cadastrarUsers($name, $cpf, $email, $data);
+header("Location: createUser.php");
 ?>

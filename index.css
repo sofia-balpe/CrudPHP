@@ -1,0 +1,37 @@
+#idBody {
+    background-color: #eabeea;
+}
+
+#idDiv {
+    background-color: #eb71ebba;
+    text-align: center;
+    margin-top: 6%;
+    margin-left: 38%;
+    position: absolute;
+    background-size: 30px;
+    padding: 160px 70px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #e156c1dc;
+}
+
+#idBtnCadastrarCliente {
+    text-align: center;
+    padding: 10px 5px;
+    background-color: #f1d9f1;
+    margin-top: 10%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#idBtnCadastrarUser{
+    text-align: center;
+    padding: 10px 5px;
+    background-color: #f1d9f1;
+    margin-top: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#idH1{
+    color: rgba(0, 0, 0, 0.509);
+    margin-top: -50%;   
+    
+}

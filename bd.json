@@ -1,3 +1,11 @@
 {
-    "clientes": []
+    "clientes": [
+        {
+            "name": "Baldissera",
+            "cpf": "038.143.012-00",
+            "endereco": "Rua 13 de Setembro, Bairro Jardim dos Migrantes, 913",
+            "data": "2008-11-05"
+        }
+    ],
+    "users": []
 }
