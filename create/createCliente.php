@@ -11,24 +11,26 @@ unset($_SESSION['feedback']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="create.css">
 </head>
-<body>
+<body id="idbody">
     
-
-<?php
+    
+    <?php
 if ($feedback!=false) {
-   foreach ($feedback as $value) {
-    echo $value;
-   }
+    foreach ($feedback as $value) {
+        echo $value;
+    }
 } 
 ?>
-    <form action="validateCreateCliente.php" method="post">
+    <form id="idform" action="validateCreateCliente.php" method="post">
+        <h1 id="idh1">Cadastro de cliente</h1>
 
-    <input type="text" placeholder="Nome de cliente" name="name" required><br>
-    <input type="text" placeholder="CPF de cliente" name="cpf" required> <br>
-    <input type="text" placeholder="Endereço de cliente" name="endereco"required> <br>
-    <input type="date" placeholder="Data de nascimento" name="data"><br>
-    <input type="submit" value="Enviar dados"> <br>
+    <input id="txtNome" type="text" placeholder="Nome de cliente" name="name" required><br>
+    <input id="txtCpf" type="text" placeholder="CPF de cliente" name="cpf" required> <br>
+    <input id="txtEndereco" type="text" placeholder="Endereço de cliente" name="endereco"required> <br>
+    <input id="txtData" type="date" placeholder="Data de nascimento" name="data"><br>
+    <input id="idSubmit" type="submit" value="Enviar dados"> <br>
     </form>
 <a href="../listar/listarCliente.php">listar Clientes</a>
 </body>

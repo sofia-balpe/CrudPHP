@@ -6,9 +6,9 @@ $banco = new banco();
 
 $indexDeletarUsers = $_GET['delete'];
 
-if ($banco->validarIndexCliente($indexDeletarUsers) == false) {
-    echo "índice não existe";
-    header('location: ../listar/listarUsers.php');
+if ($banco->validarIndexUser($indexDeletarUsers) == false) {
+   
+    header('Location: ../listar/listarUsers.php');
     exit();
 }
 

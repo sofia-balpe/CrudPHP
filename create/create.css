@@ -1,0 +1,59 @@
+#idform {
+    background-color: #eb71ebba;
+    text-align: center;
+    margin-top: 6%;
+    margin-left: 38%;
+    position: absolute;
+    background-size: 30px;
+    padding: 135px 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #e156c1dc;
+}
+#idh1{
+    color: rgba(0, 0, 0, 0.509);
+    margin-top: -10%; 
+}
+#idbody {
+    background-color: #eabeea;
+}
+
+#txtNome {
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 0px;
+}
+
+#txtCpf {
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 15px;
+}
+
+#txtEndereco {
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 15px;
+}
+
+#txtData {
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 10px;
+
+}
+#idSubmit{
+    text-align: center;
+    padding: 10px 5px;
+    background-color: #f1d9f1;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

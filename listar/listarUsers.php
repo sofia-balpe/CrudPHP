@@ -13,12 +13,16 @@ $clientesData = $banco->getUsersData();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Usuários</title>
+    <link rel="stylesheet" href="listar.css">
 </head>
-<body>
-    <h2>Lista de usuários cadastrados</h2>
-
-    <table>
-        <thead>
+<body id="idbody">
+    <h2 id="idh2">Lista de usuários cadastrados</h2>
+    <hr>
+    <a href="../create/createUser.php">
+        <button id="idbtnVoltar"><img id="iconSeta" src="../imagens/iconSeta.png" alt=""></button>
+        </a>
+    <table id="idTable">
+        <thead id="idthead">
             <tr>
                 <th>#ID</th>
                 <th>Nome</th>
@@ -27,7 +31,7 @@ $clientesData = $banco->getUsersData();
                 <th>Data</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="idtbody">
 
             <?php 
                 foreach ($clientesData as $index=>$clientes) {
@@ -37,18 +41,15 @@ $clientesData = $banco->getUsersData();
                   echo "<td>". $clientes->cpf. "</td>";
                   echo "<td>". $clientes->email. "</td>";
                   echo "<td>". $clientes->data. " </td>";
-                  echo "<td> <a href='../delete/deleteUser.php?delete=$index'> Deletar </a> </td>";
-                  echo "<td>  <a href='../editar/editarUser.php?editar=$index'> Editar</a> </td>";
+                  echo "<td> <a href='../delete/deleteUser.php?delete=$index'> <button id='btnLixeira'><img id='iconLixeira' src='../imagens/iconLixeira.png' alt=''> </button> </a> </td>";
+                  echo "<td>  <a href='../editar/editarUser.php?editar=$index'>  <button id='btnLapis'> <img id='iconLapis' src='../imagens/iconLapis.png' alt='' ></button></a> </td>";
                  
-                } 
-                
+                }               
             ?>
 
         </tbody>
 
     </table>
-    <a href="../create/createUser.php">
-    <button>Voltar</button>
     </a>
 </body>
 </html>
