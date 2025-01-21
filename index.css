@@ -9,14 +9,14 @@
     margin-left: 38%;
     position: absolute;
     background-size: 30px;
-    padding: 160px 70px;
+    padding: 160px 80px;
     border-radius: 10px;
     box-shadow: 10px 10px 5px #e156c1dc;
 }
 
 #idBtnCadastrarCliente {
     text-align: center;
-    padding: 10px 5px;
+    padding: 7px 23px;
     background-color: #f1d9f1;
     margin-top: 10%;
     border-radius: 5px;
@@ -24,7 +24,7 @@
 }
 #idBtnCadastrarUser{
     text-align: center;
-    padding: 10px 5px;
+    padding: 7px 20px;
     background-color: #f1d9f1;
     margin-top: 20%;
     border-radius: 5px;

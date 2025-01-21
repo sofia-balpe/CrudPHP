@@ -55,6 +55,11 @@ $clientesByIndex = $banco->getClienteByIndex($indexEditar);
         <input  id="idSubmit" type="submit" value="Enviar dados"> <br>
 
     </form>
+    <a href="../index.php">
+        <button id="btnHome">
+            <img id="iconHome" src="../imagens/iconCasa.png" alt="">
+        </button>
+    </a>
 
     <a href="../listar/listarCliente.php">
         <button id="btnVoltar"><img id="iconSeta" src="../imagens/iconSeta.png" alt=""></button>

@@ -16,8 +16,7 @@ unset($_SESSION['feedback']);
 </head>
 
 <body id="idbody">
-
-
+    
     <?php
     if ($feedback != false) {
         foreach ($feedback as $value) {
@@ -27,7 +26,7 @@ unset($_SESSION['feedback']);
     ?>
     <form id="idform" action="validateCreateCliente.php" method="post">
         <h1 id="idh1">Cadastro de cliente</h1>
-
+        
         <input id="txtNome" type="text" placeholder="Nome de cliente" name="name" required><br>
         <input id="txtCpf" type="text" placeholder="CPF de cliente" name="cpf" required> <br>
         <input id="txtEndereco" type="text" placeholder="Endereço de cliente" name="endereco" required> <br>
@@ -37,6 +36,11 @@ unset($_SESSION['feedback']);
     <a href="../listar/listarCliente.php">
         <button id="btnVoltar">
             <img id="iconSeta" src="../imagens/iconSeta.png" alt="">
+        </button>
+    </a>
+    <a href="../index.php">
+        <button id="btnHome">
+            <img id="iconHome" src="../imagens/iconCasa.png" alt="">
         </button>
     </a>
 </body>

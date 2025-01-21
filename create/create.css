@@ -5,9 +5,24 @@
     margin-left: 38%;
     position: absolute;
     background-size: 30px;
-    padding: 135px 50px;
+    padding: 125px 30px;
     border-radius: 10px;
     box-shadow: 10px 10px 5px #e156c1dc;
+}
+#btnHome{
+    background-color: #f1d9f1;
+    padding: 1px 10px;
+    margin-top: 1%;
+    margin-left: 91.4%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #e156c1dc;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+}
+#iconHome{
+    width: 25px;
+    height: 25px;
 }
 #idh1{
     color: rgba(0, 0, 0, 0.509);

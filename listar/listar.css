@@ -5,11 +5,23 @@
 #idTable {
     background-color: #f1d9f1;
     border-radius: 10px;
-    padding: 4%;
+    padding: 3%;
     text-align: left;
     font-size: 16px;
     margin-top: -0%;
-    margin-left: 29%;
+    margin-left: 27%;
+    box-shadow: 1px 1px 10px #e156c1dc;
+    font-family: math;
+}
+
+#idTableCliente{
+    background-color: #f1d9f1;
+    border-radius: 10px;
+    text-align: left;
+    padding: 1%;
+    font-size: 16px;
+    margin-top: -0%;
+    margin-left: 16%;
     box-shadow: 1px 1px 10px #e156c1dc;
     font-family: math;
 }
@@ -67,7 +79,7 @@
     background-color: #f1d9f1;
     padding: 1px 10px;
     margin-top: 7%;
-    margin-left: 75%;
+    margin-left: 80%;
     border-radius: 10px;
     box-shadow: 1px 1px 1px #e156c1dc;
     cursor: pointer;
@@ -77,12 +89,26 @@
     width: 20px;
     height: 20px;
 }
-
+#btnHome{
+    background-color: #f1d9f1;
+    padding: 1px 10px;
+    margin-top: -0.8%;
+    margin-left: 91.4%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #e156c1dc;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+}
+#iconHome{
+    width: 25px;
+    height: 25px;
+}
 #btnCadUser{
     background-color: #f1d9f1;
     padding: 1px 10px;
     margin-top: 7%;
-    margin-left: 70%;
+    margin-left: 76%;
     border-radius: 10px;
     box-shadow: 1px 1px 1px #e156c1dc;
     cursor: pointer;

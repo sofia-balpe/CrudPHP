@@ -22,11 +22,17 @@ $clientesData = $banco->getUsersData();
     <a href="../index.php">
         <button id="btnVoltarUser"><img id="iconSeta" src="../imagens/iconSeta.png" alt=""></button>
     </a>
+    <a href="../index.php">
+        <button style="margin-top: -0.4%;" id="btnHome">
+            <img id="iconHome" src="../imagens/iconCasa.png" alt="">
+        </button>
+    </a>
     <hr>
 
     <a href="../create/createUser.php">
         <button id="btnCadUser"><img id="iconMais" src="../imagens/iconMais.png" alt=""></button>
     </a>
+
     <table id="idTable">
         <thead id="idthead">
             <tr>

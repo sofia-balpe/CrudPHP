@@ -22,6 +22,11 @@ $clientesData = $banco->getClientesData();
     <a href="../index.php">
         <button id="idbtnVoltar"><img id="iconSeta" src="../imagens/iconSeta.png" alt=""></button>
     </a>
+    <a href="../index.php">
+        <button id="btnHome">
+            <img id="iconHome" src="../imagens/iconCasa.png" alt="">
+        </button>
+    </a>
     <hr>
 
 
@@ -29,7 +34,7 @@ $clientesData = $banco->getClientesData();
         <button id="btnCadCliente"><img id="iconMais" src="../imagens/iconMais.png" alt=""></button>
     </a>
 
-    <table id="idTable">
+    <table id="idTableCliente">
 
 
 

@@ -31,6 +31,16 @@ if ($feedback!=false) {
     <input id="txtData" type="date" placeholder="Data de nascimento" name="data"><br>
     <input id="idSubmit" type="submit" value="Enviar dados"> <br>
     </form>
-<a href="../listar/listarUsers.php">listar Usuários</a>
+
+    <a href="../listar/listarUsers.php">
+        <button id="btnVoltar">
+            <img id="iconSeta" src="../imagens/iconSeta.png" alt="">
+        </button>
+    </a>
+    <a href="../index.php">
+        <button id="btnHome">
+            <img id="iconHome" src="../imagens/iconCasa.png" alt="">
+        </button>
+    </a>
 </body>
 </html>
