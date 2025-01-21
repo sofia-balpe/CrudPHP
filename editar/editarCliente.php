@@ -25,10 +25,11 @@ $clientesByIndex = $banco->getClienteByIndex($indexEditar);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Editar Cliente</title>
+    <link rel="stylesheet" href="editar.css">
 </head>
 
-<body>
+<body id="idBody">
 
     <?php
     if ($feedback != false) {
@@ -37,25 +38,26 @@ $clientesByIndex = $banco->getClienteByIndex($indexEditar);
         }
     }
     ?>
-
-    <form action="validateEditarCliente.php" method="post">
+    <h1 id="idh1">Editar Cliente</h1>
+    <hr>
+    <form id="idForm" action="validateEditarCliente.php" method="post">
         <input type="hidden" name="editar" value="<?php echo ($indexEditar); ?>">
         <!-- o hidden serve para passar dados de forma "invisível" para que no validateEditarCliente eu consiga receber o index pelo post e assim aterar os dados no bdJson  -->
 
-        <input type="text" placeholder="Nome de usuário" name="name" required
+        <input id="txtNome" type="text" placeholder="Nome de cliente" name="name" required
             value="<?php echo $clientesByIndex->name; ?>"><br>
-        <input type="text" placeholder="CPF de usuário" name="cpf" required
+        <input id="txtCpf" type="text" placeholder="CPF de cliente" name="cpf" required
             value="<?php echo $clientesByIndex->cpf; ?>"> <br>
-        <input type="text" placeholder="Endereço de usuário" name="endereco" required
+        <input id="txtEndereco" type="text" placeholder="Endereço de cliente" name="endereco" required
             value="<?php echo $clientesByIndex->endereco; ?>"> <br>
-        <input type="date" placeholder="Data de nascimento" name="data"
+        <input id="txtData" type="date" placeholder="Data de nascimento" name="data"
             value="<?php echo $clientesByIndex->data; ?>"><br>
-        <input type="submit" value="Enviar dados"> <br>
+        <input  id="idSubmit" type="submit" value="Enviar dados"> <br>
 
     </form>
 
     <a href="../listar/listarCliente.php">
-        <button>Voltar</button>
+        <button id="btnVoltar"><img id="iconSeta" src="../imagens/iconSeta.png" alt=""></button>
     </a>
 </body>
 

@@ -25,10 +25,13 @@ $usersByIndex = $banco->getUsersByIndex($indexEditar);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>listar Usuários</title>
+    <link rel="stylesheet" href="editar.css">
 </head>
 
-<body>
+<body id="idBody">
 
+    <h1 id="idh1"> Editar Usuários</h1>
+    <hr>
     <?php
     if ($feedback != false) {
         foreach ($feedback as $value) {
@@ -38,23 +41,22 @@ $usersByIndex = $banco->getUsersByIndex($indexEditar);
 
     ?>
 
-    <form action="validateEditarUser.php" method="post">
+    <form id="idForm" action="validateEditarUser.php" method="post">
         <input type="hidden" name="editarUser" value="<?php echo ($indexEditar); ?>">
 
-        <input type="text" placeholder="Nome de usuário" name="name" required
+        <input id="txtNome" type="text" placeholder="Nome de usuário" name="name" required
             value="<?php echo $usersByIndex->name; ?>"><br>
-        <input type="text" placeholder="CPF de usuário" name="cpf" required
-            value="<?php echo $usersByIndex->cpf; ?>"> <br>
-        <input type="email" placeholder="Email de usuário" name="email" required
+        <input id="txtCpf" type="text" placeholder="CPF de usuário" name="cpf" required value="<?php echo $usersByIndex->cpf; ?>">
+        <br>
+        <input id="txtEmail" type="email" placeholder="Email de usuário" name="email" required
             value="<?php echo $usersByIndex->email; ?>"> <br>
-        <input type="date" placeholder="Data de nascimento" name="data"
-            value="<?php echo $usersByIndex->data; ?>"><br>
-        <input type="submit" value="Enviar dados"> <br>
+        <input id="txtData" type="date" placeholder="Data de nascimento" name="data" value="<?php echo $usersByIndex->data; ?>"><br>
+        <input id="idSubmit" type="submit" value="Enviar dados"> <br>
 
     </form>
 
     <a href="../listar/listarUsers.php">
-        <button>Voltar</button>
+        <button id="btnVoltar"><img id="iconSeta" src="../imagens/iconSeta.png" alt=""></button>
     </a>
 </body>
 

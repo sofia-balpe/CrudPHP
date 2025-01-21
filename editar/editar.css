@@ -1,7 +1,7 @@
-#idform {
+#idForm {
     background-color: #eb71ebba;
     text-align: center;
-    margin-top: 6%;
+    margin-top: 2%;
     margin-left: 38%;
     position: absolute;
     background-size: 30px;
@@ -11,9 +11,9 @@
 }
 #idh1{
     color: rgba(0, 0, 0, 0.509);
-    margin-top: -10%; 
+    margin-top: 2%; 
 }
-#idbody {
+#idBody {
     background-color: #eabeea;
 }
 
@@ -49,13 +49,6 @@
     margin-top: 10px;
 
 }
-#txtEmail{
-    background-color: #ffffff;
-    padding: 5px 20px;
-    border-radius: 7px;
-    border: none;
-    margin-top: 15px;
-}
 #idSubmit{
     text-align: center;
     padding: 10px 5px;
@@ -67,8 +60,8 @@
 #btnVoltar{
     background-color: #f1d9f1;
     padding: 1px 10px;
-    margin-top: 1%;
-    margin-left: 5px;
+    margin-top: 2%;
+    margin-left: 35%;
     border-radius: 10px;
     box-shadow: 1px 1px 1px #e156c1dc;
     cursor: pointer;
@@ -77,4 +70,12 @@
 #iconSeta{
     width: 20px;
     height: 20px;
+}
+
+#txtEmail{
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 15px;
 }

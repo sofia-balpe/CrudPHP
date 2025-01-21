@@ -13,12 +13,12 @@
 
     <div id="idDiv">
         <h1 id="idH1">SBP 5.0</h1>
-        <a href="create/createCliente.php">
-            <button id="idBtnCadastrarCliente">Cadastrar Clientes</button>
+        <a href="listar/listarCliente.php">
+            <button id="idBtnCadastrarCliente">Listar Clientes</button>
         </a>
         <br>
-        <a href="create/createUser.php">
-            <button id="idBtnCadastrarUser">Cadastrar Usuários</button>
+        <a href="listar/listarUsers.php">
+            <button id="idBtnCadastrarUser">Listar Usuários</button>
         </a>
     </div>
 </body>
