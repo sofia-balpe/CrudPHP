@@ -5,6 +5,7 @@ use App\banco;
 $banco = new banco();
 
 $clientesData = $banco->getClientesData();
+
 ?>
 
 <!DOCTYPE html>

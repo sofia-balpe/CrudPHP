@@ -30,7 +30,7 @@ try {
 
     $PDOStatement = $pdo->query("SELECT * FROM empresa ");
     $results = $PDOStatement->fetchAll();
-    var_dump($results);
+  
     exit();
 
 

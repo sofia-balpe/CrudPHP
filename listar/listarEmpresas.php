@@ -29,7 +29,7 @@ global $pdo;
         <?php 
            $PDOStatement = $pdo->query("SELECT * FROM empresa");
            $results = $PDOStatement->fetchAll();
-    
+           
            foreach ($results as $empresa) {
               echo "<tr>";
               echo"<td>" . $empresa["fantasia"]. "</td>" ;
@@ -37,6 +37,8 @@ global $pdo;
               echo"<td>" . $empresa["cnpj"]. "</td>" ;
               echo"<td>" . $empresa["criado_em"]. "</td>" ;
               echo"<td>" . $empresa["update_em"]. "</td>" ;
+              echo "<td> <a href='../delete/deleteEmpresa.php?delete={$empresa['id']}'>DELETAR</a></td>";
+              echo "<td> <a href='../editar/editarEmpresa.php?editar={$empresa['id']}'>EDITAR</a></td>";
               echo "</tr>";
            }
          
@@ -44,6 +46,14 @@ global $pdo;
 
     </tbody>
 </table>
-
+<a href="../create/createEmpresa.php">
+            <button id="">Cadastrar Empresa</button>
+        </a>
+<br>
+        <a href="../index.php">
+        <button id="btnHome">
+            <img id="iconHome" src="../imagens/iconCasa.png" alt="">
+        </button>
+    </a>
 </body>
 </html>

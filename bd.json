@@ -1,19 +1,18 @@
 {
-    "clientes": {
-        "1": {
-            "name": "Sofia Baldissera",
+    "clientes": [
+        {
+            "name": "Sofia",
             "cpf": "038.143.012-00",
-            "endereco": "Rua 13 de Setembro, Bairro Jardim dos Migrantes, 913",
-            "data": "2008-11-05"
-        },
-        "2": {
-            "name": "Sofia Baldissera",
-            "cpf": "038.143.012-00",
-            "endereco": "Rua 13 de Setembro, Bairro Jardim dos Migrantes, 913 ",
-            "data": "1111-11-11"
+            "endereco": "rua jasmin",
+            "data": "2222-02-22"
         }
-    },
+    ],
     "users": [
-  
+        {
+            "name": "Sofia",
+            "cpf": "038.143.012-00",
+            "email": "sofia.bp0511@gmail.com",
+            "data": "2222-11-05"
+        }
     ]
 }

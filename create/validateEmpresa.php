@@ -3,9 +3,11 @@ session_start();
 global $pdo;
 require "../conexao.php";
 
-$NomeFantasia = $_POST["nomeFantasia"];
-$razaoSocial = $_POST["razaoSocial"];
-$cnpj = $_POST["cnpj"];
+$empresa= [
+$NomeFantasia = $_POST["nomeFantasia"],
+$razaoSocial = $_POST["razaoSocial"],
+$cnpj = $_POST["cnpj"]
+];
 
 $erros = [];
 
@@ -26,8 +28,5 @@ if (!empty($erros)) {
 }
 
 $PDOStatement = $pdo->query("INSERT INTO empresa (fantasia, razao_social, cnpj, criado_em, update_em) VALUES('{$NomeFantasia}', '{$razaoSocial}', '{$cnpj}', UNIX_TIMESTAMP(), UNIX_TIMESTAMP())");
-var_dump($PDOStatement->queryString);
-$results = $PDOStatement->execute();
-exit();
-
+$PDOStatement->execute();
 header("location: createEmpresa.php");

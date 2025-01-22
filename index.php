@@ -20,6 +20,10 @@
         <a href="listar/listarUsers.php">
             <button id="idBtnCadastrarUser">Listar Usuários</button>
         </a>
+        <br>
+        <a href="listar/listarEmpresas.php">
+            <button id="btnListarEmpresa">Listar Empresas</button>
+        </a>
     </div>
 </body>
 

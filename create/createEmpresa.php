@@ -3,10 +3,11 @@ session_start();
 
 $feedback = $_SESSION['feedback'] ?? false;
 unset($_SESSION['feedback']);
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">

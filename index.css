@@ -30,6 +30,14 @@
     border-radius: 5px;
     cursor: pointer;
 }
+#btnListarEmpresa{
+    text-align: center;
+    padding: 7px 17px;
+    background-color: #f1d9f1;
+    margin-top: 20%;
+    border-radius: 5px;
+    cursor: pointer;  
+}
 #idH1{
     color: rgba(0, 0, 0, 0.509);
     margin-top: -50%;   

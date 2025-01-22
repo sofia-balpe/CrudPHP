@@ -20,10 +20,11 @@
     text-align: left;
     padding: 1%;
     font-size: 16px;
-    margin-top: -0%;
-    margin-left: 16%;
+    margin-top: 8%;
+    margin-left: 28%;
     box-shadow: 1px 1px 10px #e156c1dc;
     font-family: math;
+    position: absolute;
 }
 
 #idthead {
@@ -79,12 +80,15 @@
     background-color: #f1d9f1;
     padding: 1px 10px;
     margin-top: 7%;
-    margin-left: 80%;
+    margin-left: 65%;
     border-radius: 10px;
     box-shadow: 1px 1px 1px #e156c1dc;
     cursor: pointer;
     border: none;
+    display: flex;
+    position: absolute;
 }
+
 #iconMais{
     width: 20px;
     height: 20px;
@@ -99,7 +103,7 @@
     cursor: pointer;
     border: none;
     position: absolute;
-}
+}    
 #iconHome{
     width: 25px;
     height: 25px;
