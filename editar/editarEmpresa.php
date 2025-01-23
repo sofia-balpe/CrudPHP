@@ -19,7 +19,7 @@ $result = $empresaData->fetch();
 <body>
     <?php echo ""; ?>
     <form action="validateEditarEmpresa.php" method="post">
-        <input type="hidden" name="idEditar" value="<?php echo ($idEditar) ?>">
+        <input type="hidden" name="idEditar" value="<?php echo ($idEditar)?>">
         <input type="text" placeholder="nome da empresa" name="nomeFantasia" value="<?php echo $result['fantasia']; ?>">
         <input type="text" placeholder="razao social" name="razaoSocial" value="<?php echo $result['razao_social']; ?>">
         <input type="text" placeholder="CNPJ" name="cnpj" value="<?php echo $result['cnpj']; ?>">
